@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/google-kepp-clone/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/google-kepp-clone/static/js/main.de7b1aa3.chunk.js",
+    "main.js.map": "/google-kepp-clone/static/js/main.de7b1aa3.chunk.js.map",
+    "runtime-main.js": "/google-kepp-clone/static/js/runtime-main.92b9883e.js",
+    "runtime-main.js.map": "/google-kepp-clone/static/js/runtime-main.92b9883e.js.map",
+    "static/js/2.d270b2ca.chunk.js": "/google-kepp-clone/static/js/2.d270b2ca.chunk.js",
+    "static/js/2.d270b2ca.chunk.js.map": "/google-kepp-clone/static/js/2.d270b2ca.chunk.js.map",
+    "static/js/3.f4be62ba.chunk.js": "/google-kepp-clone/static/js/3.f4be62ba.chunk.js",
+    "static/js/3.f4be62ba.chunk.js.map": "/google-kepp-clone/static/js/3.f4be62ba.chunk.js.map",
+    "index.html": "/google-kepp-clone/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/google-kepp-clone/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.d270b2ca.chunk.js.LICENSE.txt": "/google-kepp-clone/static/js/2.d270b2ca.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/google-kepp-clone/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92b9883e.js",
+    "static/js/2.d270b2ca.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.de7b1aa3.chunk.js"
+  ]
+}
