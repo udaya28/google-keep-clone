@@ -6,14 +6,23 @@ import { LandingPage } from './components/LandingPage/landingPage';
 
 function App() {
   const [isLoggedIn, setLoggedIn] = useState(false);
+  const [userData, setUserData] = useState({});
   useEffect(() => {
-    // setInterval(()=>setLoggedIn(true),5000)
-    return () => {
-     
-    }
-  }, [])
+    console.log(isLoggedIn, userData);
+    return () => {};
+  }, [isLoggedIn, userData]);
   return (
-    <div className="App">{isLoggedIn ? <LandingPage /> : <LoginPage />}</div>
+    <div className="App">
+      {isLoggedIn ? (
+        <LandingPage userData={userData} />
+      ) : (
+        <LoginPage
+          userData={userData}
+          setUserData={setUserData}
+          setLoggedIn={setLoggedIn}
+        />
+      )}
+    </div>
   );
 }
 
