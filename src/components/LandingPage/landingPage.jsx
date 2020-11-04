@@ -7,7 +7,7 @@ export const LandingPage = ({ userData }) => {
       <h1>{userData.displayName }</h1>
       <h2>{userData.email}</h2>
   <h3>{userData.uid}</h3>
-  <img src={userData.photoURL} />
+  <img src={userData.photoURL} alt={userData.displayName}/>
     </Container>
   );
 };
