@@ -6,7 +6,7 @@ import firebase, { auth, signInWithGoogle } from '../../firebase';
 export const LoginPage = ({ userData, setUserData, setLoggedIn }) => {
   const handleSignUp = async () => {
     let loginData,
-      emailVerified = false,
+      emailVerified = false, 
       errorMessage = '';
     try {
       loginData = await signInWithGoogle();
