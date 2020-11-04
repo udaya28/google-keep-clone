@@ -1,6 +1,6 @@
 import Button from '@material-ui/core/Button';
 import './loginPage.scss';
-import {  Container } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 import firebase, { auth, signInWithGoogle } from '../../firebase';
 
 export const LoginPage = ({ userData, setUserData, setLoggedIn }) => {
