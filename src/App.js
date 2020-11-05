@@ -22,8 +22,10 @@ function App() {
         console.log('log out');
       }
     });
-    return () => {};
   }, []);
+ useEffect(() => {
+   console.log(isLoggedIn,userData)
+ }, [isLoggedIn,userData])
 
   return (
     <div className="App">
