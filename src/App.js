@@ -2,26 +2,32 @@ import React, { useState, useEffect } from 'react';
 import './App.scss';
 import { LoginPage } from './components/LoginPage/loginPage';
 import { LandingPage } from './components/LandingPage/landingPage';
+import firebase from './firebase';
 // import firebase,{DB,auth ,signInWithGoogle} from './firebase';
 
 function App() {
   const [isLoggedIn, setLoggedIn] = useState(false);
   const [userData, setUserData] = useState({});
+
   useEffect(() => {
-    console.log(isLoggedIn, userData);
+    firebase.auth().onAuthStateChanged(function (data) {
+      if (data) {
+        const { photoURL, uid, email, displayName } = data;
+        setUserData({ photoURL, uid, email, displayName });
+        setLoggedIn(true);
+        console.log('log in');
+      } else {
+        setUserData({});
+        setLoggedIn(false);
+        console.log('log out');
+      }
+    });
     return () => {};
-  }, [isLoggedIn, userData]);
+  }, []);
+
   return (
     <div className="App">
-      {isLoggedIn ? (
-        <LandingPage userData={userData} />
-      ) : (
-        <LoginPage
-          userData={userData}
-          setUserData={setUserData}
-          setLoggedIn={setLoggedIn}
-        />
-      )}
+      {isLoggedIn ? <LandingPage userData={userData} /> : <LoginPage />}
     </div>
   );
 }

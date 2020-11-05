@@ -1,27 +1,14 @@
 import Button from '@material-ui/core/Button';
 import './loginPage.scss';
 import { Container } from '@material-ui/core';
-import firebase, { auth, signInWithGoogle } from '../../firebase';
+import { signInWithGoogle } from '../../firebase';
 
-export const LoginPage = ({ userData, setUserData, setLoggedIn }) => {
-  const handleSignUp = async () => {
-    let loginData,
-      emailVerified = false, 
-      errorMessage = '';
+export const LoginPage = () => {
+  const handleSignUp = () => {
     try {
-      loginData = await signInWithGoogle();
-      console.log(loginData.user);
-      emailVerified = loginData.user.emailVerified;
+      signInWithGoogle();
     } catch (error) {
-      errorMessage = error.message;
-    } finally {
-      if (emailVerified) {
-        const { photoURL, uid, email, displayName } = loginData.user;
-        await setUserData({ photoURL, uid, email, displayName });
-        setLoggedIn(true);
-      } else {
-        console.log(errorMessage);
-      }
+      console.log(error.message);
     }
   };
 
