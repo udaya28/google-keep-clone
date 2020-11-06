@@ -14,7 +14,6 @@ img {
 }
 .carousel .slide {
   background-color: white !important;
- 
 }
 
 :focus {
@@ -41,13 +40,12 @@ img {
   width: 80% !important;
   margin-top: 15px !important;
 }
-@media (min-width: 600px){
+@media (min-width: 600px) {
   .MuiContainer-maxWidthSm {
     max-width: 500px !important;
   }
-
 }
 
-.slide-1{
- width: 90%;
+.slide-1 {
+  width: 90%;
 }

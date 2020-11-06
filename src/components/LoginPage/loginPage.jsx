@@ -28,7 +28,6 @@ export const LoginPage = () => {
             stopOnHover={false}
             swipeable={true}
             autoPlay
-           
           >
             <div>
               <img src={s} alt="" />
@@ -67,7 +66,6 @@ export const LoginPage = () => {
           color="primary"
           onClick={handleSignUp}
           startIcon={<img src={googleIcon} alt="" srcSet="" />}
-          
         >
           Sign in with Google
         </Button>
