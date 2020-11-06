@@ -9,7 +9,7 @@
 img {
   background-color: rgb(255, 255, 255);
   width: 70% !important;
-  height: auto !important;
+  height: 100% !important;
   // height: 300px;
 }
 .carousel .slide {
@@ -48,4 +48,11 @@ img {
 
 .slide-1 {
   width: 90%;
+}
+
+.img-first{
+  margin-top: 35px !important;
+}
+.img-third{
+  height: 80% !important;
 }

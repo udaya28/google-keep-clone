@@ -4,7 +4,9 @@ import { Container } from '@material-ui/core';
 import { signInWithGoogle } from '../../firebase';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import s from '../../svg/xy.svg';
+import todo from '../../svg/todo.svg';
+import notes from '../../svg/notes.svg';
+import sync from '../../svg/sync.svg';
 import googleIcon from '../../svg/google-icon.svg';
 export const LoginPage = () => {
   const handleSignUp = () => {
@@ -24,13 +26,13 @@ export const LoginPage = () => {
             showStatus={false}
             showThumbs={false}
             infiniteLoop={true}
-            interval={5000}
+            interval={3000}
             stopOnHover={false}
             swipeable={true}
             autoPlay
           >
             <div>
-              <img src={s} alt="" />
+              <img src={todo} alt="" className="img-first"/>
               <div className="content">
                 <p className="heading">Brands curated with care</p>
                 <p className="caption">
@@ -40,7 +42,7 @@ export const LoginPage = () => {
               </div>
             </div>
             <div>
-              <img src={s} alt="" />
+              <img src={notes} alt="" />
               <div className="content">
                 <p className="heading">Brands curated with care</p>
                 <p className="caption">
@@ -50,7 +52,7 @@ export const LoginPage = () => {
               </div>
             </div>
             <div>
-              <img src={s} alt="" />
+              <img src={sync} alt="" className="img-third"/>
               <div className="content">
                 <p className="heading">Brands curated with care</p>
                 <p className="caption">
