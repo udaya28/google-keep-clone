@@ -19,3 +19,16 @@ img {
 :focus {
   outline: none !important;
 }
+.content{
+  padding-bottom: 30px !important;
+  padding: 0px 20px;
+  .heading{
+    font-weight: 700;
+    font-size: 16px;
+    
+  }
+  .caption{
+    font-weight: 300;
+    font-size: 14px;
+  }
+}

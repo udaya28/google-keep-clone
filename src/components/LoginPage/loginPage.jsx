@@ -22,30 +22,41 @@ export const LoginPage = () => {
             showArrows={false}
             showStatus={false}
             showThumbs={false}
-            infiniteLoop={true}
-            interval={2000}
+            // infiniteLoop={true}
+            interval={2500}
             stopOnHover={false}
             swipeable={true}
             autoPlay
           >
             <div>
-              <img
-                src={s}
-                alt=""
-              />
-              <h1>hello</h1>
+              <img src={s} alt="" />
+              <div className="content">
+                <p className="heading">Brands curated with care</p>
+                <p className="caption">
+                  Invest in your favorites across fashion, lifestyle, food &
+                  beverages & more
+                </p>
+              </div>
             </div>
             <div>
-              <img
-                src={s}
-                alt=""
-              />
+              <img src={s} alt="" />
+              <div className="content">
+                <p className="heading">Brands curated with care</p>
+                <p className="caption">
+                  Invest in your favorites across fashion, lifestyle, food &
+                  beverages & more
+                </p>
+              </div>
             </div>
             <div>
-              <img
-                src={s}
-                alt=""
-              />
+              <img src={s} alt="" />
+              <div className="content">
+                <p className="heading">Brands curated with care</p>
+                <p className="caption">
+                  Invest in your favorites across fashion, lifestyle, food &
+                  beverages & more
+                </p>
+              </div>
             </div>
           </Carousel>
         </div>
