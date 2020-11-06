@@ -14,21 +14,40 @@ img {
 }
 .carousel .slide {
   background-color: white !important;
+ 
 }
 
 :focus {
   outline: none !important;
 }
-.content{
+.content {
   padding-bottom: 30px !important;
   padding: 0px 20px;
-  .heading{
+  .heading {
     font-weight: 700;
     font-size: 16px;
-    
   }
-  .caption{
+  .caption {
     font-weight: 300;
     font-size: 14px;
   }
+}
+.MuiButton-containedPrimary {
+  color: #525252 !important;
+  background-color: #ffffff !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+  border-radius: 20px !important;
+  width: 80% !important;
+  margin-top: 15px !important;
+}
+@media (min-width: 600px){
+  .MuiContainer-maxWidthSm {
+    max-width: 500px !important;
+  }
+
+}
+
+.slide-1{
+ width: 90%;
 }

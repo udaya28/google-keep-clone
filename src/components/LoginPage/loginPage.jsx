@@ -5,6 +5,7 @@ import { signInWithGoogle } from '../../firebase';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import s from '../../svg/xy.svg';
+import googleIcon from '../../svg/google-icon.svg';
 export const LoginPage = () => {
   const handleSignUp = () => {
     try {
@@ -17,16 +18,17 @@ export const LoginPage = () => {
   return (
     <Container maxWidth="sm">
       <div className="login">
-        <div>
+        <div className="slide-1">
           <Carousel
             showArrows={false}
             showStatus={false}
             showThumbs={false}
-            // infiniteLoop={true}
-            interval={2500}
+            infiniteLoop={true}
+            interval={5000}
             stopOnHover={false}
             swipeable={true}
             autoPlay
+           
           >
             <div>
               <img src={s} alt="" />
@@ -60,8 +62,14 @@ export const LoginPage = () => {
             </div>
           </Carousel>
         </div>
-        <Button variant="contained" color="primary" onClick={handleSignUp}>
-          SignUp
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={handleSignUp}
+          startIcon={<img src={googleIcon} alt="" srcSet="" />}
+          
+        >
+          Sign in with Google
         </Button>
       </div>
     </Container>
