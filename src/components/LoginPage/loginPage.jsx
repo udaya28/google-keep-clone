@@ -26,7 +26,7 @@ export const LoginPage = () => {
             showStatus={false}
             showThumbs={false}
             infiniteLoop={true}
-            interval={3000}
+            interval={4000}
             stopOnHover={false}
             swipeable={true}
             autoPlay
@@ -34,30 +34,27 @@ export const LoginPage = () => {
             <div>
               <img src={todo} alt="" className="img-first"/>
               <div className="content">
-                <p className="heading">Brands curated with care</p>
+                <p className="heading">Plan your day</p>
                 <p className="caption">
-                  Invest in your favorites across fashion, lifestyle, food &
-                  beverages & more
+                  Stay on track and get things done by making Todo
                 </p>
               </div>
             </div>
             <div>
               <img src={notes} alt="" />
               <div className="content">
-                <p className="heading">Brands curated with care</p>
+                <p className="heading">Stay on track</p>
                 <p className="caption">
-                  Invest in your favorites across fashion, lifestyle, food &
-                  beverages & more
+                  Quickly capture your thoughts anywhere by making Notes
                 </p>
               </div>
             </div>
             <div>
               <img src={sync} alt="" className="img-third"/>
               <div className="content">
-                <p className="heading">Brands curated with care</p>
+                <p className="heading">Synchronization in milliseconds </p>
                 <p className="caption">
-                  Invest in your favorites across fashion, lifestyle, food &
-                  beverages & more
+                Synchronization among sign in devices without reloading
                 </p>
               </div>
             </div>
