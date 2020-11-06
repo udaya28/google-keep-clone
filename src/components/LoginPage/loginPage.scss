@@ -1,6 +1,6 @@
 .login {
   height: 100vh;
-  background-color: rgb(255, 255, 255);
+  // background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +10,7 @@ img {
   background-color: rgb(255, 255, 255);
   width: 70% !important;
   height: 100% !important;
+  
   // height: 300px;
 }
 .carousel .slide {
@@ -56,3 +57,4 @@ img {
 .img-third{
   height: 80% !important;
 }
+
