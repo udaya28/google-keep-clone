@@ -26,9 +26,7 @@
     0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12) !important;
 }
 
-.MuiButton-contained:hover {
-  background-color: white !important;
-}
+
 .img,
 .logo-g {
   width: 70% !important;
@@ -37,7 +35,7 @@
   .img {
     width: 40% !important;
   }
-  .MuiButton-contained {
+  .sign-in-button {
     width: 50% !important;
   }
 }
