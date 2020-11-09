@@ -50,7 +50,7 @@ export const LoginPage = () => {
     <div className="full">
       <Container maxWidth="sm" className="login-main">
         <div className="login">
-          <h1 className="head">Google keep clone</h1>
+          <h1 className="head">JARVIS🤍</h1>
           <div className="slide-1">
             <Carousel
               showArrows={false}
